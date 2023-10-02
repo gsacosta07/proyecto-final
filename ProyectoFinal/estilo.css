@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #4B4B55;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+
+/*barra de navegacion*/
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #EFE2E9;
+    margin: 0px;
+    padding: 20px;
+}
+
+li {
+    margin-right: 30px;
+}
+
+
+/*menu hamburguesa*/
+
+#burger-menu-query {
+    display: none;
+}
+
+
+/*estilo de boton*/
+
+.dark-buttom {
+    background-color: #A7007D;
+    border: 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 100px;
+    font-weight: 600;
+    width: 150px;
+}
+
+/*seccion principal*/
+
+/*imagen solo para media query*/
+
+#img-media-query {
+    display: none;
+    max-height: 50%;
+    max-width: 50%;
+}
+
+.container-principal-section {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #EFE2E9;
+}
+
+.text-content-principal-section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-content-principal-section h2 {
+    font-size: 18px;
+    color: #2e2ec2;
+}
+
+.text-content-principal-section h1 {
+    font-weight: 700;
+    font-size: 80px;
+    margin: 0px;
+    color: #4B4B55;
+}
+
+.img-principal-section img {
+    width: 100%;
+    display: flex;
+}
+
+/*seccion de skills*/
+
+.skills-section {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.text-skills-section h1 {
+    font-weight: 800;
+}
+
+.text-skills-section h3 {
+    font-weight: 300;
+}
+
+.icons-skills-section {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icons-skills-section img {
+    margin: 20px;
+}
+
+.icons-skills-section p {
+    font-weight: 700;
+}
+
+
+/*seccion de frase memorable*/
+
+.quote-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    /*estilo fachero de fondo de la seccion quote*/
+    background-image: linear-gradient(to bottom, #ff5487, #f14485, #e33283, #d41f82, #c40080);
+}
+
+.quote-section p {
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+
+/*seccion mis proyectos*/
+
+.projects-section {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.projects-section h1 {
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+}
+
+.bar-projects {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.bar-projects button {
+    margin-right: 20px;
+    margin-bottom: 35px;
+}
+
+
+/*boton claro*/
+
+.light-buttom {
+    color: #4B4B55;
+    background-color: rgb(249, 212, 218, .4);
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 100px;
+    font-weight: 600;
+    width: 150px;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+    /*estilo fachero de fondo de la seccion quote*/
+    background-image: linear-gradient(to top, #ff5487, #f14485, #e33283, #d41f82, #c40080);
+}
+
+.footer-bar {
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+
+/*iconos de redes sociales*/
+
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-size: 30px;
+}
+
+
+/*comportamiento de links barra nav seccion y footer*/
+
+nav,
+section,
+footer,
+a:link {
+    text-decoration: none;
+    color: #4B4B55;
+}
+
+nav,
+section,
+footer,
+a:visited {
+    color: #4B4B55;
+}
+
+nav,
+section,
+footer,
+a:hover {
+    color: #F28C8E;
+}
+
+
+/*comportamiento de links barra nav de footer*/
+
+footer a:link {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:visited {
+    color: white;
+}
+
+footer a:hover {
+    color: #F28C8E;
+}
+
+
+/*media querys*/
+
+@media(max-width:500px) {
+    .img-principal-section {
+        display: none;
+    }
+    .container-principal-section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .text-content-principal-section {
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .text-content-principal-section h2 {
+        font-size: 20px;
+        margin: 0px;
+    }
+    .text-content-principal-section h1 {
+        display: none;
+    }
+    #img-media-query {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    #img-media-query img {
+        width: 50%;
+        height: auto;
+    }
+    .container-principal-section a {
+        display: flex;
+        justify-content: center;
+        font-size: small;
+    }
+    .nav-bar {
+        display: none;
+    }
+    li {
+        margin-right: 10px;
+    }
+    .footer-bar {
+        font-weight: 400;
+        display: flex;
+    }
+    #burger-menu-query {
+        display: flex;
+        width: 100%;
+        height: auto;
+        background-color: #EFE2E9;
+    }
+    #subtitle {
+        font-size: 20px;
+    }
+    .bar-projects {
+        display: flex;
+        align-items: center;
+    }
+}
